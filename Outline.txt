@@ -97,3 +97,11 @@ inventoryOrders - admin orders more meds from supplier
 	
 	
 	
+6 SQL queries needed IDEAS:
+
+admins might need to see perscriptons that are more than a year old
+admins need to see when they are out of a med
+users need to see their percriptions, how many refills
+users need to see inventory
+Doctors need to see patients
+Doctors need to see all written perscriptions
