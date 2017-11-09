@@ -15,6 +15,7 @@ customer_Orders - checks prescription (with frontend to verify prescription amou
 	Cust_Order_ID
 	Customer_ID
 	Prescription_ID
+	Employee_ID // who shipped the order
 	Meds_ID
 	Date_Ordered
 
@@ -33,6 +34,11 @@ Prescriptions
 	Date prescribed
 	Optional - pill identifier picture 
 
+
+- Employee
+	Employee_ID
+	Employee_Name
+	Employee_Title
 
 
 	
