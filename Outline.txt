@@ -1,0 +1,99 @@
+Customer - makes orders cancels orders, signs up for our service
+	Customer id
+	Customer name
+	Customer Shipping Address
+
+
+Doctors - send in prescriptions
+Doctor id
+Doctor Name
+Doctor Zip code 
+
+
+
+customer_Orders - checks prescription (with frontend to verify prescription amount) 
+	Cust_Order_ID
+	Customer_ID
+	Prescription_ID
+	Meds_ID
+	Date_Ordered
+
+
+Meds- how many of what we have - seen by admins, customers	
+	Meds_ID
+	Meds_Name  - example Aspirin 25mg
+	Stock_Amount
+		
+
+Prescriptions 
+	Prescription ID
+	Doctor id who prescribed
+	Customer id prescribed to
+	Refill amounts
+	Date prescribed
+	Optional - pill identifier picture 
+
+
+
+	
+
+
+
+
+
+
+
+Need 3 indexes  indexing by customer id provides the best user experience for our customers
+
+
+Index prescriptions on customer_Id 
+Index Customer_Orders on customer_ID
+
+
+Index meds on Stock amount -
+	Admins will be checking this to see if they need to restock
+
+
+
+If we need more tables:
+
+Patient_Of
+	Doctor_Id
+	Customer_ID
+
+Employee
+	Employee_ID
+	Employee_Name
+	Employee_TItle
+
+
+
+
+Order history OPTIONAL
+
+	Previous_Orders
+		Previous_Orders_ID
+		customer_Id
+		order_Id
+		med_Id
+		Date_Ordered
+
+SUPPLIER AND INVENTORY UPDATES ARE OPTIONAL
+
+In Meds
+	Add 	Supplier_ID 
+
+
+Suppliers - provide meds - only seen by admins - each supplier makes only one drug
+	Supplier ID
+	Supplier Name
+
+
+inventoryOrders - admin orders more meds from supplier
+	Inventory_Order_ID
+	Meds_ID
+	Supplier_ID
+	Date_Ordered
+	
+	
+	
