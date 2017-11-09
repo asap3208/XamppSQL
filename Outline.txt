@@ -5,9 +5,15 @@ Customer - makes orders cancels orders, signs up for our service
 
 
 Doctors - send in prescriptions
-Doctor id
-Doctor Name
-Doctor Zip code 
+
+	Doctor id
+	Doctor Name
+	Doctor Zip code 
+
+Patient_Of
+	Patient_Of_ID
+	Doctor_ID
+	Customer_ID
 
 
 
@@ -33,7 +39,14 @@ Prescriptions
 	Refill amounts
 	Date prescribed
 	Optional - pill identifier picture 
+	
 
+Restock_Orders-
+	Restock_Order_Id
+	Employee_ID
+	Meds_ID
+	Order_Date
+	
 
 - Employee
 	Employee_ID
