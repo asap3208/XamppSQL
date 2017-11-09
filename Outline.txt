@@ -48,8 +48,7 @@ Need 3 indexes  indexing by customer id provides the best user experience for ou
 
 Index prescriptions on customer_Id 
 Index Customer_Orders on customer_ID
-
-
+index patient_of on doctor_Id (they will be the ones using that table)
 Index meds on Stock amount -
 	Admins will be checking this to see if they need to restock
 
