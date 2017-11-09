@@ -36,6 +36,7 @@ Prescriptions
 	Prescription ID
 	Doctor id who prescribed
 	Customer id prescribed to
+	Meds_ID
 	Refill amounts
 	Date prescribed
 	Optional - pill identifier picture 
